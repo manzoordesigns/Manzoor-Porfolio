@@ -6,10 +6,10 @@
 <title>Manzoor Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;700&family=Nunito:wght@600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-home">
 
 <div class="mobile-gate">
   <img src="assets/icons/logo.svg" alt="Manzoor Elahi logo" class="mobile-gate__logo">
@@ -66,7 +66,7 @@
 
     <p class="hero__subtext">
       Hello, I'm Manzoor Elahi, with 10+ years of experience as a Sr.Product Designer.<br>
-      I'm passionate about transforming ideas into sleek, <span class="hero__subtext-highlight">user-centric</span> designs.
+      I'm passionate about transforming ideas into sleek, <span class="hero__subtext-highlight"><i></i><i></i><i></i><i></i>user-centric</span> designs.
     </p>
 
     <a href="https://wa.me/919940331279" target="_blank" rel="noopener" class="magic-button">
@@ -176,7 +176,7 @@
     <p class="works__watermark">WORKS</p>
 
     <div class="works__list">
-      <a href="work.html#simple-touch" class="work-card">
+      <a href="work.html" class="work-card">
         <div class="work-card__media">
           <img src="assets/images/work-simpletouch.png" alt="Simple Touch case study">
           <span class="work-card__badge work-card__badge--read">5 MINUTES READ</span>
@@ -189,29 +189,29 @@
           <div class="work-card__info">
             <div class="work-card__tags">
               <span>UI/UX DESIGN</span>
-              <span>WEB</span>
+              <span>MOBILE EXPERIENCE</span>
               <span>VISUAL DESIGN</span>
             </div>
             <p class="work-card__title">
-              <strong>Simple Touch -</strong> Making everyday smartphone actions simpler, one touch at a time
+              <strong>Simple Touch -</strong> Turning complex smartphone actions into simple taps
             </p>
           </div>
           <div class="work-card__stats">
             <div class="work-card__stat">
-              <p class="work-card__stat-value">2-3<span>x</span></p>
-              <p class="work-card__stat-label">More conversion</p>
+              <p class="work-card__stat-value work-card__stat-value--sm">1 TAP</p>
+              <p class="work-card__stat-label">Simple interaction</p>
             </div>
             <div class="work-card__stat">
-              <p class="work-card__stat-value">31%</p>
-              <p class="work-card__stat-label">More engagement</p>
+              <p class="work-card__stat-value work-card__stat-value--sm">NFC</p>
+              <p class="work-card__stat-label">Physical-to-digital</p>
             </div>
           </div>
         </div>
       </a>
 
-      <a href="work.html#indiahikes" class="work-card">
+      <div class="work-card work-card--static">
         <div class="work-card__media">
-          <img src="assets/images/work-indiahikes.png" alt="IndiaHikes case study">
+          <img src="assets/images/work-indiahikes.png" alt="IndiaHikes case study" style="object-position: center 8%;">
           <span class="work-card__badge work-card__badge--read">5 MINUTES READ</span>
           <span class="work-card__badge work-card__badge--cta">
             VIEW CASE STUDY
@@ -226,25 +226,25 @@
               <span>WEBSITE</span>
             </div>
             <p class="work-card__title">
-              <strong>Indianhikes:</strong> Redesigning India's leading trekking platform to simplify adventure experiences.
+              <strong>Indianhikes</strong> - Redesigning India's leading trekking platform to simplify adventure experiences.
             </p>
           </div>
           <div class="work-card__stats">
             <div class="work-card__stat">
-              <p class="work-card__stat-value">2-3<span>x</span></p>
+              <p class="work-card__stat-value">3x</p>
               <p class="work-card__stat-label">More conversion</p>
             </div>
             <div class="work-card__stat">
-              <p class="work-card__stat-value">31%</p>
-              <p class="work-card__stat-label">More engagement</p>
+              <p class="work-card__stat-value">30%</p>
+              <p class="work-card__stat-label">Story-led exploration</p>
             </div>
           </div>
         </div>
-      </a>
+      </div>
 
-      <a href="work.html#qnb-banking" class="work-card">
-        <div class="work-card__media">
-          <img src="assets/images/work-qnb.png" alt="QNB Banking case study">
+      <a href="work-qnb.html" class="work-card">
+        <div class="work-card__media work-card__media--flat work-card__media--r24">
+          <img src="assets/images/qnb-hero.jpg" alt="QNB Digital Banking case study">
           <span class="work-card__badge work-card__badge--read">5 MINUTES READ</span>
           <span class="work-card__badge work-card__badge--cta">
             VIEW CASE STUDY
@@ -260,7 +260,7 @@
               <span>WEB APP</span>
             </div>
             <p class="work-card__title">
-              <strong>QNB - Banking Project:</strong> Contributed to enterprise-scale digital experiences by creating scalable
+              <strong>QNB - Digital Banking</strong> Contributed to enterprise-scale digital experiences by creating scalable
             </p>
           </div>
           <div class="work-card__stats">
@@ -269,16 +269,16 @@
               <p class="work-card__stat-label">More conversion</p>
             </div>
             <div class="work-card__stat">
-              <p class="work-card__stat-value">31%</p>
-              <p class="work-card__stat-label">More engagement</p>
+              <p class="work-card__stat-value">35%</p>
+              <p class="work-card__stat-label">More Engagement</p>
             </div>
           </div>
         </div>
       </a>
 
-      <a href="work.html#amazon-motor-insurance" class="work-card">
-        <div class="work-card__media">
-          <img src="assets/images/work-amazon-motor.png" alt="Amazon Motor Insurance case study">
+      <div class="work-card work-card--static">
+        <div class="work-card__media work-card__media--flat">
+          <img src="assets/images/work-amazon-motor.png" alt="Amazon Motor Insurance case study" style="object-position: center 15%;">
           <span class="work-card__badge work-card__badge--read">5 MINUTES READ</span>
           <span class="work-card__badge work-card__badge--cta">
             VIEW CASE STUDY
@@ -302,29 +302,106 @@
               <p class="work-card__stat-label">More conversion</p>
             </div>
             <div class="work-card__stat">
-              <p class="work-card__stat-value">31%</p>
-              <p class="work-card__stat-label">More engagement</p>
+              <p class="work-card__stat-value">250k+</p>
+              <p class="work-card__stat-label">Revenue shared</p>
             </div>
           </div>
         </div>
-      </a>
+      </div>
     </div>
+
+    <p class="works__view-all">VIEW ALL</p>
   </section>
 
-  <section class="testimonials" id="testimonials">
-    <p class="testimonials__watermark">WHAT<br>CLIENTS SAY</p>
+  <section class="reviews" id="testimonials">
+    <p class="reviews__watermark">WHAT<br>CLIENTS SAY</p>
 
-    <div class="testimonials__list">
-      <div class="testimonial">
-        <p class="testimonial__quote">I worked with Manzoor early in his career at HoloPundits on enterprise AR/VR products, including TotalAR. What stood out was his curiosity and willingness to learn. Over time, he grew into a dependable designer who took ownership, asked the right questions, and consistently delivered high-quality work. His growth in problem-solving, collaboration, and design confidence has been remarkable.</p>
-        <p class="testimonial__author">Sudhakar Muppasani</p>
-        <p class="testimonial__role">Director of AI &amp; Cloud Technologies, HoloPundits</p>
-      </div>
-
-      <div class="testimonial">
-        <p class="testimonial__quote">Manzoor consistently brought strong product thinking and a user-first approach to the healthcare and pharmaceutical initiatives we worked on for global clients. He has a remarkable ability to translate complex business requirements into intuitive, user-friendly digital experiences. His openness to feedback, continuous drive to learn, and growth in both design craft and strategic thinking made him a dependable and collaborative designer.</p>
-        <p class="testimonial__author">Satish Kumar</p>
-        <p class="testimonial__role">Project Lead, Indegene</p>
+    <div class="reviews__viewport">
+      <div class="reviews__track">
+        <a href="https://www.linkedin.com/in/manzoorelahiks/details/recommendations/?detailScreenTabIndex=0" target="_blank" rel="noopener" class="review">
+          <p class="review__quote">I had the opportunity to manage Manzoor early in his career at HoloPundits, where we worked together on enterprise AR/VR products, including TotalAR. It has been wonderful to see how far he has come since then. When he joined, AR and VR were completely new to him, but he brought genuine curiosity and a strong willingness to learn. Over time, I watched that curiosity turn into confidence as he grew.... <span class="review__more">More on linked in</span></p>
+          <div class="review__chips"><span class="review__chip">EdTech</span><span class="review__chip">AR /VR</span></div>
+          <div class="review__author">
+            <div class="review__person">
+              <img src="assets/images/review-sudhakar.jpg" alt="" class="review__avatar" style="object-position: 18% center;">
+              <div class="review__who">
+                <p class="review__name">Sudhakar Muppasani</p>
+                <p class="review__role">Director of AI &amp; Cloud Technologies</p>
+              </div>
+            </div>
+            <span class="review__logo review__logo--white"><img src="assets/images/review-logo-holopundits.png" alt=""></span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/manzoorelahiks/details/recommendations/?detailScreenTabIndex=0" target="_blank" rel="noopener" class="review">
+          <p class="review__quote">I had the pleasure of working with Manzoor at Indegene on several healthcare and pharmaceutical initiatives for global clients, including Boehringer-Ingelheim. Manzoor is a passionate, dedicated, and highly talented UX/UI designer who consistently demonstrates strong product thinking and a user-first approach in everything he does. He has a remarkable ability to understand complex business... <span class="review__more">More on linked in</span></p>
+          <div class="review__chips"><span class="review__chip">Healthcare</span></div>
+          <div class="review__author">
+            <div class="review__person">
+              <img src="assets/images/review-satish.jpg" alt="" class="review__avatar">
+              <div class="review__who">
+                <p class="review__name">Satish Kumar</p>
+                <p class="review__role">Project Lead @ Indegene</p>
+              </div>
+            </div>
+            <span class="review__logo review__logo--r12"><img src="assets/images/review-logo-indegene.jpg" alt=""></span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/manzoorelahiks/details/recommendations/?detailScreenTabIndex=0" target="_blank" rel="noopener" class="review">
+          <p class="review__quote">I worked with Manzoor on the Amazon Motor Insurance project. He is a thoughtful designer with a strong understanding of user needs and attention to detail. He collaborated well and was open to feedback and new ideas. I&rsquo;d be happy to work with him again - <span class="review__more">on linked in</span></p>
+          <div class="review__chips"><span class="review__chip">Fintech</span><span class="review__chip">E-Commerce</span></div>
+          <div class="review__author">
+            <div class="review__person">
+              <img src="assets/images/review-tapan.jpg" alt="" class="review__avatar">
+              <div class="review__who">
+                <p class="review__name">Tapan Bhatia</p>
+                <p class="review__role">Sr. Product Manager @ Amazon |</p>
+              </div>
+            </div>
+            <span class="review__logo"><img src="assets/images/review-logo-amazon.png" alt=""></span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/manzoorelahiks/details/recommendations/?detailScreenTabIndex=0" target="_blank" rel="noopener" class="review" aria-hidden="true" tabindex="-1">
+          <p class="review__quote">I had the opportunity to manage Manzoor early in his career at HoloPundits, where we worked together on enterprise AR/VR products, including TotalAR. It has been wonderful to see how far he has come since then. When he joined, AR and VR were completely new to him, but he brought genuine curiosity and a strong willingness to learn. Over time, I watched that curiosity turn into confidence as he grew.... <span class="review__more">More on linked in</span></p>
+          <div class="review__chips"><span class="review__chip">EdTech</span><span class="review__chip">AR /VR</span></div>
+          <div class="review__author">
+            <div class="review__person">
+              <img src="assets/images/review-sudhakar.jpg" alt="" class="review__avatar" style="object-position: 18% center;">
+              <div class="review__who">
+                <p class="review__name">Sudhakar Muppasani</p>
+                <p class="review__role">Director of AI &amp; Cloud Technologies</p>
+              </div>
+            </div>
+            <span class="review__logo review__logo--white"><img src="assets/images/review-logo-holopundits.png" alt=""></span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/manzoorelahiks/details/recommendations/?detailScreenTabIndex=0" target="_blank" rel="noopener" class="review" aria-hidden="true" tabindex="-1">
+          <p class="review__quote">I had the pleasure of working with Manzoor at Indegene on several healthcare and pharmaceutical initiatives for global clients, including Boehringer-Ingelheim. Manzoor is a passionate, dedicated, and highly talented UX/UI designer who consistently demonstrates strong product thinking and a user-first approach in everything he does. He has a remarkable ability to understand complex business... <span class="review__more">More on linked in</span></p>
+          <div class="review__chips"><span class="review__chip">Healthcare</span></div>
+          <div class="review__author">
+            <div class="review__person">
+              <img src="assets/images/review-satish.jpg" alt="" class="review__avatar">
+              <div class="review__who">
+                <p class="review__name">Satish Kumar</p>
+                <p class="review__role">Project Lead @ Indegene</p>
+              </div>
+            </div>
+            <span class="review__logo review__logo--r12"><img src="assets/images/review-logo-indegene.jpg" alt=""></span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/manzoorelahiks/details/recommendations/?detailScreenTabIndex=0" target="_blank" rel="noopener" class="review" aria-hidden="true" tabindex="-1">
+          <p class="review__quote">I worked with Manzoor on the Amazon Motor Insurance project. He is a thoughtful designer with a strong understanding of user needs and attention to detail. He collaborated well and was open to feedback and new ideas. I&rsquo;d be happy to work with him again - <span class="review__more">on linked in</span></p>
+          <div class="review__chips"><span class="review__chip">Fintech</span><span class="review__chip">E-Commerce</span></div>
+          <div class="review__author">
+            <div class="review__person">
+              <img src="assets/images/review-tapan.jpg" alt="" class="review__avatar">
+              <div class="review__who">
+                <p class="review__name">Tapan Bhatia</p>
+                <p class="review__role">Sr. Product Manager @ Amazon |</p>
+              </div>
+            </div>
+            <span class="review__logo"><img src="assets/images/review-logo-amazon.png" alt=""></span>
+          </div>
+        </a>
       </div>
     </div>
   </section>
@@ -387,5 +464,6 @@
 </div>
 
 <script src="js/scroll-top.js"></script>
+<script src="js/reviews.js"></script>
 </body>
 </html>
