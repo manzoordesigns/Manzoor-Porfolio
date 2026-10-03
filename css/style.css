@@ -135,9 +135,15 @@ img {
 }
 
 .nav__socials img {
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
   flex-shrink: 0;
+}
+
+/* Envelope keeps its 20x16 proportion (Figma) instead of being squared off */
+.nav__socials img[src$="mail.svg"] {
+  width: 20px;
+  height: 16px;
 }
 
 /* ---------- Hero ---------- */
@@ -284,23 +290,58 @@ img {
   flex-wrap: wrap;
 }
 
+/* Each slot is 220x80 and the logos are placed at their Figma (node 131:920) positions */
 .brands__logo {
+  position: relative;
   width: 220px;
   height: 80px;
+  flex-shrink: 0;
   border-radius: 12px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .brands__logo img {
-  width: auto;
-  height: auto;
-  max-width: 75%;
-  max-height: 55%;
+  position: absolute;
+  display: block;
+  max-width: none;
+}
+
+.brands__logo--bny img,
+.brands__logo--indegene img {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brands__logo--bny img {
+  object-position: center;
+}
+
+.brands__logo--indegene img {
+  object-fit: fill;
+  object-position: bottom;
+}
+
+.brands__logo--holo img {
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   object-position: center;
+}
+
+.brands__logo--amazon img {
+  left: 35.75px;
+  top: 25.28px;
+  width: 148.63px;
+  height: 44.72px;
+}
+
+.brands__logo--qnb img {
+  left: 56px;
+  top: 24px;
+  width: 120px;
+  height: 32px;
 }
 
 /* ---------- Skills ---------- */
@@ -357,8 +398,17 @@ img {
 .skills__row--2 { height: 73px; }
 .skills__row--3 { height: 92px; }
 
+/* Resting state is blurred; hovering brings the skill fully into focus */
 .skill {
   position: absolute;
+  filter: blur(2.5px);
+  opacity: 0.6;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.skill:hover {
+  filter: blur(0);
+  opacity: 1;
 }
 
 .skill__box {
@@ -460,6 +510,12 @@ img {
 .skill--interaction .skill__plain-text {
   position: relative;
   z-index: 1;
+}
+
+/* Gap that the yellow box sits in between "INTERACTION" and "DESIGN" */
+.skill__interaction-gap {
+  display: inline-block;
+  width: 40px;
 }
 
 .skill__interaction-accent {
@@ -636,10 +692,10 @@ img {
 
 .skill__proto-bracket {
   position: absolute;
-  left: 49px;
-  top: 0;
-  width: 109px;
-  height: 92px;
+  left: 46.33px;
+  top: -0.5px;
+  width: 115.35px;
+  height: 93px;
 }
 
 /* Design Systems */
@@ -658,9 +714,13 @@ img {
   gap: 4px;
 }
 
+/* Figma: 8px union rotated -45deg inside an 11.3px box */
 .skill__tag-bullet {
-  width: 11px;
-  height: 11px;
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  margin: 1.66px;
+  transform: rotate(-45deg);
 }
 
 .skill__tag-text {
